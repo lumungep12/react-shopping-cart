@@ -37,3 +37,17 @@
         12.style cart, header, cartItems, images and list of cartitems
         13.use localstorage on app constructor to load cart items(json.parse)
         14.use localstorage on addToCart and save cart items(json.stringify)
+#step8 : Checkout Form
+        1. Set active task management
+        2. Create nwe branch
+        3. Make items persisitent in Cart.js after refresh
+        4. Use localStorage to load cart items
+        5. Use localstorage on addtocart to save cart items
+        6. Update showcheckout state to true on click
+        7. Render checkout form conditionally
+        8. Get user details
+        9. Handle the input function
+        10. Add checkout button
+        11. handle onsubmit button
+        12. Create order object and pass to parent to handle it
+        13. publish changes
