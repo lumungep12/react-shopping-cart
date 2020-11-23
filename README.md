@@ -51,3 +51,21 @@
         11. handle onsubmit button
         12. Create order object and pass to parent to handle it
         13. publish changes
+#step9 : Ading Modal and Animations
+        1. Set active task in task manager
+        2. Create a new branch of modal animation
+        3. Show animations
+        4. Install react reveal for animations
+        5. Create the necessary effects
+        6. Effect include: fade effect from bottom to top by products
+                            fade left for adding to cart
+                            open modal on click on a product
+        7. install react modals for modals
+        8. Import modal to rect files Product.js
+        9. Set state for product to null
+        10.Define open and close modal states
+        11.Show modal if product exists
+        12. create modal
+        13. Create a zoom effect
+        14. Style product details modal
+        15. git hub 
