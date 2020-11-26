@@ -69,3 +69,17 @@
         13. Create a zoom effect
         14. Style product details modal
         15. git hub 
+#step10 : Create a Products Backend using Express, MongoDb, NodeJs
+        1. Install Nodejs Globally
+        2. Add a server.js file
+        3. Install express body-parser mongoose shortid
+        4. install mongodb
+        5. initialzie express app
+        6. app.use(bodyParser.json())
+        7.Mongoose.connect()
+        8. Create a product model
+        9. App.post(/api/products/:id) to mongodb
+        10 Use postman to send requests to backend
+        11 Route.get('/api/products/) => get all products
+        12. Route.delete('/api/products/:id)
+#step 11: Adding Redux
