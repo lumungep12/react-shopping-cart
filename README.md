@@ -83,3 +83,29 @@
         11 Route.get('/api/products/) => get all products
         12. Route.delete('/api/products/:id)
 #step 11: Adding Redux
+        1. Create a new branch
+        2. Install redux, react-redux, redux-thunk
+        3. Set initial state after importing redux
+        4. create types
+        5. define fetch products
+        6. actions/productActions
+        7. declare fetch products
+        8. create reducers
+        9. reducers/ProductReducers
+        10. define case fetch products
+        11. create store
+        12. Store.js, import redux
+        13. App.js
+        14. Import store
+        15. Wrap everything in provider
+        16. Connect products
+        17. components/products.js
+        18. connetc to store
+        19. import fetch products
+        20. set state products to null
+        21. fetch products on componentdidimount
+        22. package.json
+        23. set proxy to http:127.0.0.1:5000
+        24. npm run server
+        25. check product list
+        26. commit & publish
