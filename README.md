@@ -109,3 +109,24 @@
         24. npm run server
         25. check product list
         26. commit & publish
+step11: Adding Redux to filter
+        1. create new branch
+        2. and update task manager
+        3. create FILTER_PRODUCTS_BY_SIZE and ORDER_PRODUCTS_BY_PRICE in types.js
+        4. actions/productActions.js
+        5. create filterProducts and sortProducts in productActions
+        6. Move App.js filter logic here (centralized)
+        7. reducers/productReducers
+        8. case FILTER_PRODUCTSBY_SIZE
+        9. case ORDER_PRODUCTS_BY_PRICE
+        10. filter.js
+        11. connect props: size, sort, items and filteredItems
+        12. connect actions: filterProducts and sortProducts
+        13. show loading if no filtered products
+        14. app.js
+        15. remove filter props
+        16. check results
+        17. Commit
+step 12: Add redux to Cart
+        1. store.js
+        2. set cartItems from localstorage

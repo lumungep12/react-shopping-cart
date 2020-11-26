@@ -3,7 +3,6 @@ import React from 'react';
 import Cart from './Components/Cart';
 import Filter from './Components/Filter';
 import Products from './Components/Products';
-import data from './data.json';
 import store from './store';
 import { Provider } from 'react-redux';
  
@@ -12,10 +11,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      products : data.products,
-      cartItems: localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) :[], 
-      size: "",
-      sort: "",
+      cartItems: localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) :[],
     };
   }
 
@@ -46,36 +42,36 @@ class App extends React.Component {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   };
 
-  sortProducts = (e) => {
-    const sort = e.target.value;
-    this.setState((state) => ({
-      sort: sort,
-      products: this.state.products.slice().sort((a, b) => 
-      sort === "lowest" ?
-      a.price > b.price ?
-      1 : -1:
-      sort === "highest" ?
-      a.price < b.price ?
-      1 : -1:
-      a._id > b._id ?
-      1 : -1 ),
-    }));
-  };
+  // sortProducts = (e) => {
+  //   const sort = e.target.value;
+  //   this.setState((state) => ({
+  //     sort: sort,
+  //     products: this.state.products.slice().sort((a, b) => 
+  //     sort === "lowest" ?
+  //     a.price > b.price ?
+  //     1 : -1:
+  //     sort === "highest" ?
+  //     a.price < b.price ?
+  //     1 : -1:
+  //     a._id > b._id ?
+  //     1 : -1 ),
+  //   }));
+  // };
 
-  filterProducts = (e) => {
+  // filterProducts = (e) => {
 
-    if(e.target.value === ""){
-      this.setState({
-        size: e.target.value,
-        product: data.products
-      });
-    }else{
-    this.setState({
-      size: e.target.value,
-      products: data.products.filter(product => product.availableSizes.indexOf(e.target.value) >= 0)
-    });
-  }
-  }
+  //   if(e.target.value === ""){
+  //     this.setState({
+  //       size: e.target.value,
+  //       product: data.products
+  //     });
+  //   }else{
+  //   this.setState({
+  //     size: e.target.value,
+  //     products: data.products.filter(product => product.availableSizes.indexOf(e.target.value) >= 0)
+  //   });
+  // }
+  // }
 
 
   render(){
@@ -88,15 +84,8 @@ class App extends React.Component {
       <main>
         <div className="content">
           <div className="mainContent">
-            <Filter count={this.state.products.length}
-                    size = {this.state.size}
-                    sort = {this.state.sort} 
-                    
-                    filterProducts = {this.filterProducts} 
-                    sortProducts = {this.sortProducts}
-             />
+            <Filter/>
             <Products 
-              products={this.state.products} 
               addToCart={this.addToCart} 
             />
           </div>
