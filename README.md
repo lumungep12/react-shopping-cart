@@ -130,3 +130,26 @@ step11: Adding Redux to filter
 step 12: Add redux to Cart
         1. store.js
         2. set cartItems from localstorage
+step13: Creating an Order
+        1. Server.js
+        2. Create a modal
+        3. get api/orders
+        4. post api/orders
+        5. delete api/orders
+        6. Frontend Tasks
+        7. Create types
+        8. CLEAR_ORDER, CLEAR_CART, CREATE_ORDER
+        9. Create actions
+        10. actions/orderActions.js
+        11. creatorder
+        12. createreducers/orderReducer.js
+        13. case CREATE_ORDER
+        13. case CLEAR_ORDER
+        14. update cart component
+        15. components/cart.js
+        16. connect order, createOrder, clearOrder
+        17. from onSubmit={this.createOrder}
+        18. createOrder() this.props.createOrder(order)
+        19. closeModal() this.props.clearOrder
+        20. render()
+        21. const {cartItems, order} = this.props
