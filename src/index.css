@@ -207,3 +207,27 @@ input{
   right: 1rem;
   z-index: 1000;
 }
+
+/* ORDER DETAILS */
+.orderDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.orderDetails li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orderDetails li div{
+  padding: 10px
+}
+.orderDetails .items{
+  text-align: center;
+  padding: 0;
+}
+.successMessage{
+  color: yellowgreen;
+}
