@@ -107,6 +107,7 @@ class Cart extends Component {
                       <div>
                         <div>{item.title}</div>
                         <div className="right">
+                          100
                           {formatCurrency(item.price)} x {item.count}{" "}
                           <button
                             className="button"

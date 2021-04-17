@@ -3,7 +3,7 @@ import Filter from '../Components/Filter';
 import Products from '../Components/Products';
 import Cart from '../Components/Cart';
 
-export default class HomeScreen extends Component {
+export default class Shop extends Component {
     render() {
         return (
             <div>

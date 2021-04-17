@@ -2,9 +2,11 @@
 import React from 'react';
 import store from './store';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import HomeScreen from './screens/HomeScreen';
-import AdminScreen from './screens/AdminScreen';
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from './Pages/Home';
+import Shop from './Pages/Shop';
+import AdminDash from './Pages/AdminDash';
+import Navbar from './Components/Navbar';
  
 
 class App extends React.Component {
@@ -14,12 +16,12 @@ class App extends React.Component {
       <BrowserRouter>
     <div className="grid-container">
       <header>
-      <Link to="/">React Shopping Cart</Link>
-      <Link to="/admin">Admin</Link>
+        <Navbar/>
       </header>
       <main>
-              <Route path="/admin" component={AdminScreen} />
-              <Route path="/" component={HomeScreen} exact />
+              <Route path="/" exact component={Home} />
+              <Route path="/shop" component={Shop} />
+              <Route path="/admin" component={AdminDash} />
       </main>
       <footer>
         All rights are Reserved
